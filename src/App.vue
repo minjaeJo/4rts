@@ -1,16 +1,24 @@
 <template>
-    <div>
-
+    <div id="app">
+        <navigation></navigation>
+        <div>ddd</div>
     </div>
 </template>
 
 <script>
-
+import Navigation from './components/Navigation'
 export default {
-    name: 'App'
+    components: {
+        Navigation
+    }
 }
 </script>
 
-<style>
-
+<style lang="scss">
+    body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
 </style>
