@@ -3,9 +3,9 @@
         <div class="dosLogo">
             <!-- <img id="dosLogoImage" src=""> -->
             <div class="">
-            ~~OS 2019v1 <br>
-            Copyright (C) ㅁㅅ<br><br>
-            E:\ㅁㅅ\dir_
+                ~~OS 2019v1 <br>
+                Copyright (C) ㅁㅅ<br><br>
+                E:\ㅁㅅ\dir_
             </div>
         </div>
         <ul id="taskList"></ul>
