@@ -32,11 +32,6 @@ export default {
 
 <style lang="scss" scoped>
     .navigation-container {
-        width: 100%;
-        height: 26px;
-        font-size: 15px;
-        background-color: #202020;
-        justify-content: space-between;
         margin: 0;
         padding: 0;
         border: 0;
@@ -46,11 +41,11 @@ export default {
         .menu-list {
             position: relative;
             display: inline-block;
-            font-size: 10px;
+            font-size: 12px;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: white;
-            line-height: 13px;
+            line-height: 18px;
 
             .column-header {
                 padding: 7px 20px 6px 20px;
@@ -58,7 +53,7 @@ export default {
             #header-mainlogo {
                 position: absolute;
                 left: 15px;
-                top: 2px;
+                top: 4px;
                 width: 25px;
                 height: 21px;
                 display: inline-block;
