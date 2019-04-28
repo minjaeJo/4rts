@@ -7,22 +7,12 @@
             </header>
             <content>
                 <div id="windows">
-                    <div v-if="is_portfolio" class="app-frame" style="top:197px;left:218px;z-index:1005;opacity:1;">
-                        <div class="app-toolbar">
-                            <ul class="app-controls">
-                                <li class="close" @click="is_portfolio = false"></li>
-                                <li class="minimise"></li>
-                                <li class="maximise"></li>
-                            </ul>
-                            <div class="app-title">포트폴리오 제목</div>
-                        </div>
-                        <div class="app-body-template" style="width: 744px;height: 490px;"></div>
-                    </div>
+                    <about-us v-if="is_about_us" @closeBtn="closeBtn('about-us')"></about-us>
                 </div>
                 <div id="files">
-                    <div class="file" @click="is_portfolio = true">
-                        <div class="file-icon"></div>
-                        <div class="file-title">FILENAME</div>
+                    <div class="file" @click="closeBtn('about-us')">
+                        <div class="file-icon" style="background-image: url('/static/images/question.png')"></div>
+                        <div class="file-title">ABOUT US</div>
                     </div>
                     <div class="file">
                         <div class="file-icon"></div>
@@ -50,18 +40,31 @@
 import {TweenMax, CSSPlugin, ScrollToPlugin, Draggable} from 'gsap/all'
 import Navigation from './components/Navigation'
 import Boot from './components/Boot'
+import AboutUs from './components/AboutUs'
 export default {
     components: {
         Navigation,
-        Boot
+        Boot,
+        AboutUs
+    },
+    mounted() {
     },
     data() {
         return {
-            is_portfolio: false
+            is_about_us: false
         }
     },
     methods: {
+        closeBtn(display) {
+            switch (display) {
+                case 'about-us':
+                    this.is_about_us = !this.is_about_us
+                    break;
 
+                default:
+                    break;
+            }
+        }
     }
 }
 </script>
@@ -101,15 +104,15 @@ content {
             background-color: #202020;
             border-radius: 3px;
             width: 100%;
-            height: 20px;
+            height: 18px;
             display: flex;
             justify-content: center;
             /* background-image: url(../img/details/DoubleLine.png); */
             background-repeat: repeat-x;
             background-position-y: center;
             li {
-                width: 12px;
-                height: 12px;
+                width: 10px;
+                height: 10px;
                 float: left;
                 margin: 4px 0;
                 margin-left: 7px;
@@ -135,22 +138,11 @@ content {
         }
         .app-title {
             text-align: center;
-            font-size: 13px;
-            line-height: 16px;
+            font-size: 12px;
+            line-height: 15px;
             letter-spacing: 2.5px;
             padding: 2px 15px;
             color: #bdbebe;
-        }
-        .app-body-template {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            overflow-y: scroll;
-            padding-top: 50px;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-            justify-content: center;
-            background: #1e1e1e;
         }
     }
 }
