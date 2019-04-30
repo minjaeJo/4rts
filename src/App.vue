@@ -7,16 +7,17 @@
             </header>
             <content>
                 <div id="windows">
-                    <about-us v-if="is_about_us" @closeBtn="closeBtn('about-us')"></about-us>
+                    <about-us v-if="is_about_us" @closeBtn="closeBtn('aboutus')"></about-us>
+                    <members v-if="is_members" @closeBtn="closeBtn('members')"></members>
                 </div>
                 <div id="files">
-                    <div class="file" @click="closeBtn('about-us')">
+                    <div class="file" @click="closeBtn('aboutus')">
                         <div class="file-icon" style="background-image: url('/static/images/question.png')"></div>
                         <div class="file-title">ABOUT US</div>
                     </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-title">FILENAME</div>
+                    <div class="file" @click="closeBtn('members')">
+                        <div class="file-icon" style="background-image: url('/static/images/members.png')"></div>
+                        <div class="file-title">MEMBERS</div>
                     </div>
                     <div class="file">
                         <div class="file-icon"></div>
@@ -37,30 +38,34 @@
 </template>
 
 <script>
-import {TweenMax, CSSPlugin, ScrollToPlugin, Draggable} from 'gsap/all'
-import Navigation from './components/Navigation'
-import Boot from './components/Boot'
-import AboutUs from './components/AboutUs'
+import {TweenMax, CSSPlugin, ScrollToPlugin, Draggable} from 'gsap/all';
+import Navigation from './components/Navigation';
+import Boot from './components/Boot';
+import AboutUs from './components/AboutUs';
+import Members from './components/Members';
 export default {
     components: {
         Navigation,
         Boot,
-        AboutUs
+        AboutUs,
+        Members
     },
     mounted() {
     },
     data() {
         return {
-            is_about_us: false
+            is_about_us: false,
+            is_members: false
         }
     },
     methods: {
         closeBtn(display) {
             switch (display) {
-                case 'about-us':
-                    this.is_about_us = !this.is_about_us
+                case 'aboutus':
+                    this.is_about_us = !this.is_about_us;
                     break;
-
+                case 'members':
+                    this.is_members = !this.is_members;
                 default:
                     break;
             }
@@ -100,7 +105,6 @@ content {
         box-shadow: 0 35px 36px rgba(255, 0, 0, 0.1);
         /* visibility: hidden; */
         .app-toolbar {
-            position: absolute;
             background-color: #202020;
             border-radius: 3px;
             width: 100%;

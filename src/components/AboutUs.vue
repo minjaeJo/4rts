@@ -6,7 +6,7 @@
                 <li class="minimise"></li>
                 <li class="maximise"></li>
             </ul>
-            <div class="app-title">포트폴리오 제목</div>
+            <div class="app-title">ABOUT US</div>
         </div>
         <div class="app-body">
                     ___
