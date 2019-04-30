@@ -9,6 +9,7 @@
                 <div id="windows">
                     <about-us v-if="is_about_us" @closeBtn="closeBtn('aboutus')"></about-us>
                     <members v-if="is_members" @closeBtn="closeBtn('members')"></members>
+                    <projects v-if="is_projects" @closeBtn="closeBtn('projects')"></projects>
                     <contact v-if="is_contact" @closeBtn="closeBtn('contact')"></contact>
                 </div>
                 <div id="files">
@@ -20,13 +21,9 @@
                         <div class="file-icon" style="background-image: url('/static/images/members.png')"></div>
                         <div class="file-title">MEMBERS</div>
                     </div>
-                    <div class="file">
+                    <div class="file" @click="closeBtn('projects')">
                         <div class="file-icon"></div>
                         <div class="file-title">PROJECTS</div>
-                    </div>
-                    <div class="file">
-                        <div class="file-icon"></div>
-                        <div class="file-title">PRESS</div>
                     </div>
                     <div class="file" @click="closeBtn('contact')">
                         <div class="file-icon"></div>
@@ -44,13 +41,15 @@ import Navigation from './components/Navigation';
 import Boot from './components/Boot';
 import AboutUs from './components/AboutUs';
 import Members from './components/Members';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import Projects from './components/Projects';
 export default {
     components: {
         Navigation,
         Boot,
         AboutUs,
         Members,
+        Projects,
         Contact
     },
     mounted() {
@@ -59,7 +58,8 @@ export default {
         return {
             is_about_us: false,
             is_members: false,
-            is_contact: false
+            is_contact: false,
+            is_projects: false
         }
     },
     methods: {
@@ -70,8 +70,13 @@ export default {
                     break;
                 case 'members':
                     this.is_members = !this.is_members;
+                    break;
                 case 'contact':
                     this.is_contact = !this.is_contact;
+                    break;
+                case 'projects':
+                    this.is_projects = !this.is_projects;
+                    break;
                 default:
                     break;
             }
@@ -136,12 +141,15 @@ content {
                 padding: 0;
                 .close {
                     background: #ff5953;
+                    opacity: 1;
                 }
                 .minimise {
                     background: #e6c029;
+                    opacity: 1;
                 }
                 .maximise {
                     background: #53c22b;
+                    opacity: 1;
                 }
             }
         }
@@ -188,5 +196,46 @@ content {
             margin-top: 3px;
         }
     }
+}
+@media only screen and (max-width: 880px) {
+    #files {
+        top: 40px;
+        .file {
+            margin: 10px;
+            .file-icon {
+                width: 50px;
+                height: 50px;
+                background-size: 50px 50px;
+            }
+            .file-title {
+                font-size: 8px;
+            }
+        }
+    }
+    #windows {
+    .app-frame {
+        top: 0px !important;
+        left: 0px !important;
+        width: 100%;
+        height: 100%;
+        .app-toolbar {
+            height: 20px;
+            li {
+                width: 13px;
+                height: 13px;
+                margin: 4px 0;
+                margin-left: 8px;
+            }
+        }
+        .app-title {
+
+        }
+        .app-body {
+            width: 100%;
+            height: calc(100% - 20px);
+            overflow-x: hidden;
+        }
+    }
+}
 }
 </style>

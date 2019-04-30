@@ -2,10 +2,10 @@
     <div id="dosLoading">
         <div class="dosLogo">
             <!-- <img id="dosLogoImage" src=""> -->
-            <div class="">
-                ~~OS 2019 v1 <br>
-                Copyright (C) finncho<br><br>
-                E:\finncho\dir_
+            <div class="dosText">
+                4rts_OS_2019_v1<br>
+                Copyright (C) finncho<br>
+                C:\4rts\home
             </div>
         </div>
         <ul id="taskList"></ul>
@@ -56,6 +56,7 @@ export default {
             //Highligh if if a failed task
             if (resultIndex > 7) {
                 list.style.color = 'yellow';
+                // list.style.color = '#f81518';
             }
             this.dosLoading.scrollTop = this.dosLoading.scrollHeight;
             this.iter ++;
@@ -128,6 +129,9 @@ letter-spacing: 3.6px
     padding-top: 30px;
 
 }
+.dosText {
+    margin-left: 10px;
+}
 #dosLogoImage{
   width: 125px;
   margin: 40px;
@@ -149,5 +153,13 @@ letter-spacing: 3.6px
   50%   { opacity: 0; }
   51%   { opacity: 1; }
   100% { opacity: 1; }
+}
+@media only screen and (max-width: 880px) {
+    #dosLoading, .dosText {
+        font-size: 8px;
+    }
+    #taskList{
+        padding: 20px 0px 0px 20px;
+    }
 }
 </style>

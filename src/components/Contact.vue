@@ -10,6 +10,11 @@
         </div>
         <div class="app-body">
             <div class="title">Contact Us</div>
+            <b-form-input class="form-format" v-model="name" placeholder="이름"></b-form-input>
+            <b-form-input class="form-format" v-model="email" placeholder="E-Mail"></b-form-input>
+            <b-form-input class="form-format" v-model="title" placeholder="제목"></b-form-input>
+            <b-form-textarea class="form-format" v-model="context" placeholder="내용" :rows="8" :max-rows="8"></b-form-textarea>
+            <b-btn variant="gradation-gray">제출</b-btn>
         </div>
     </div>
 </template>
@@ -18,6 +23,10 @@
 export default {
     data() {
         return {
+            name: '',
+            email: '',
+            title: '',
+            context: ''
         }
     },
     methods: {
@@ -50,5 +59,8 @@ export default {
         font-size: 40px;
         margin-bottom: 13px;
     }
+}
+.form-format {
+    margin: 0px 20px;
 }
 </style>

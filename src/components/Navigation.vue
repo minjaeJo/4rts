@@ -31,45 +31,50 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .navigation-container {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font-family: inherit;
-        vertical-align: baseline;
-        .menu-list {
-            position: relative;
-            display: inline-block;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: white;
-            line-height: 18px;
+.navigation-container {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    .menu-list {
+        position: relative;
+        display: inline-block;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        line-height: 18px;
 
-            .column-header {
-                padding: 7px 20px 6px 20px;
-            }
-            #header-mainlogo {
-                position: absolute;
-                left: 15px;
-                top: 4px;
-                width: 25px;
-                height: 21px;
-                display: inline-block;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                background: #fff;
-                border-radius: 5px;
-            }
-            #portfolio-title {
-                /* background: var(--gradient-Straight1);
-                background-size: 150% 150%;
-                background-position: center; */
-                padding: 7px 40px 6px 56px;
-                margin-right: 20px;
-            }
+        .column-header {
+            padding: 7px 20px 6px 20px;
+        }
+        #header-mainlogo {
+            position: absolute;
+            left: 15px;
+            top: 4px;
+            width: 25px;
+            height: 21px;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background: #fff;
+            border-radius: 5px;
+        }
+        #portfolio-title {
+            /* background: var(--gradient-Straight1);
+            background-size: 150% 150%;
+            background-position: center; */
+            padding: 7px 40px 6px 56px;
+            margin-right: 20px;
         }
     }
+}
+@media only screen and (max-width: 880px) {
+    .utils {
+        display: none !important;
+    }
+}
 </style>
