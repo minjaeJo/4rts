@@ -9,6 +9,7 @@
                 <div id="windows">
                     <about-us v-if="is_about_us" @closeBtn="closeBtn('aboutus')"></about-us>
                     <members v-if="is_members" @closeBtn="closeBtn('members')"></members>
+                    <contact v-if="is_contact" @closeBtn="closeBtn('contact')"></contact>
                 </div>
                 <div id="files">
                     <div class="file" @click="closeBtn('aboutus')">
@@ -21,15 +22,15 @@
                     </div>
                     <div class="file">
                         <div class="file-icon"></div>
-                        <div class="file-title">FILENAME</div>
+                        <div class="file-title">PROJECTS</div>
                     </div>
                     <div class="file">
                         <div class="file-icon"></div>
-                        <div class="file-title">FILENAME</div>
+                        <div class="file-title">PRESS</div>
                     </div>
-                    <div class="file">
+                    <div class="file" @click="closeBtn('contact')">
                         <div class="file-icon"></div>
-                        <div class="file-title">FILENAME</div>
+                        <div class="file-title">CONTACT</div>
                     </div>
                 </div>
             </content>
@@ -43,19 +44,22 @@ import Navigation from './components/Navigation';
 import Boot from './components/Boot';
 import AboutUs from './components/AboutUs';
 import Members from './components/Members';
+import Contact from './components/Contact'
 export default {
     components: {
         Navigation,
         Boot,
         AboutUs,
-        Members
+        Members,
+        Contact
     },
     mounted() {
     },
     data() {
         return {
             is_about_us: false,
-            is_members: false
+            is_members: false,
+            is_contact: false
         }
     },
     methods: {
@@ -66,6 +70,8 @@ export default {
                     break;
                 case 'members':
                     this.is_members = !this.is_members;
+                case 'contact':
+                    this.is_contact = !this.is_contact;
                 default:
                     break;
             }
@@ -106,7 +112,6 @@ content {
         /* visibility: hidden; */
         .app-toolbar {
             background-color: #202020;
-            border-radius: 3px;
             width: 100%;
             height: 18px;
             display: flex;
