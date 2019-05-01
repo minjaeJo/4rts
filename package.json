@@ -4,7 +4,7 @@
   "description": "A Vue.js project",
   "author": "minjae <alswo2722@naver.com>",
   "private": true,
-  "homepage": "https://www.minjae.dev/4rts/",
+  "homepage": "https://www.minjaeJo.github.io/4rts/",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
