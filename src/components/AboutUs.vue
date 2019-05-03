@@ -9,114 +9,11 @@
             <div class="app-title">ABOUT US</div>
         </div>
         <div class="app-body">
-                    ___
-                   /\__\         _____
-                  /:/ _/_       /: :\  \                   Erik Bernacchi
-                 /:/ /\__\     /:/\ :\  \                  Head of UX, Design & Motion
-                /:/ /:/ _/_   /:/ /: :\__\
-               /:/_/:/ /\__\ /:/_/:/\:|__|                 eeerik.com
-               \:\/:/ /:/  / \:\/:/ /:/  /                 erik.bernacchi@gmail.com
-                \::/_/:/  /   \::/_/:/  /                  +61 435 273 727
-                 \:\/:/  /     \:\/:/  /
-                  \::/  /       \::/  /                    ☟ Sydney, Australia
-                   \/__/         \/__/
-
-
-            +------------------------------------------------------------------+
-            | o o o ===================== Profile.txt =========================|
-            +------------------------------------------------------------------+/
-            |    _      ____   ____    _ ____  _______  _ __  ___              |/
-            |   | | /| / / /  / __ \  (_) __/ / __/ _ \(_) /_/__ \             |/
-            |   | |/ |/ / _ \/ /_/ / / /\ \  / _// , _/ /  '_//__/       +---------------+
-            |   |__/|__/_//_/\____/ /_/___/ /___/_/|_/_/_/\_\(_)         | o o o ========|
-            |                                                            |---------------+/
-            +------------------------------------------------------------|  more at      |/
-            |                                                            | .-----------. |/
-            |   Erik is a polymath mind whose areas of wizardry          |(  eeerik.com )|/
-            |   range from UX, Design, Art Direction, Animation, 3D      | `-----------' |/
-            |   and Programming.                                         +---------------+/
-            |                                                             /////////////////
-            |   Wildly obsessed with good ideas, art and softwares,       /////////////////
-            |   Erik has an innate attitude to stretch the boundaries          |/
-            |   and challenge the benchmarks.                                  |/
-            |                                                                  |/
-            |   Originally born in Italy, he now lives and works in Sydney     |/
-            |   as Head of UX, Design & Motion at Traffik, Clemenger BBDO.     |/
-            |                                                                  |/
-            +------------------------------------------------------------------+/
-            ////////////////////////////////////////////////////////////////////
-            ////////////////////////////////////////////////////////////////////
-
-
-
-
-                    _  _____  _______  _ _____  ___________
-                ___ | |/_/ _ \/ __/ _ \(_) __/ |/ / ___/ __/
-                / -_)>  </ ___/ _// , _/ / _//    / /__/ _/
-                \__/_/|_/_/  /___/_/|_/_/___/_/|_/\___/___/
-
-
-
-
-            ✏︎    HEAD of UX, DESIGN & MOTION - Traffik, Clemenger BBDO, Sydney
-            |    Jan, 2018 —> Present
-            |
-            |    Leading the UX, Product Design and Motion team for cutting edge
-            |    experiences, products and advertising campaigns.
-            |
-            |    ® Clients: Metricon, Shell, Tim Tam, Cadbury, Oreo, California Tourism
-            |
-            |
-            |    .......................................................................
-            |
-            |
-            ✏︎    LEAD EXPERIENCE DESIGNER - Traffik, Clemenger BBDO, Sydney
-            |    Dec, 2016 —> Jan, 2018
-            |
-            |    UX, Product Design and Motion lead for award winning experiences,
-            |    products and advertising campaigns.
-            |
-            |    ® Clients: Metricon, Reece, Colgate, eBay, Lendlease, V Energy, JNTO
-            |
-            |
-            |    .......................................................................
-            |
-            |
-            ✏︎    SENIOR DIGITAL DESIGNER - Traffik, Clemenger BBDO, Sydney
-            |    Dec, 2014 —> Dec, 2016
-            |
-            |    Worked closely with ECD and Digital Director on experiential
-            |    and advertising campaigns.
-            |
-            |    ® Clients: Samsung, Mazda, DHL, Mountain Dew, Schweppes, Cathay Pacific
-            |
-            |
-            |    .......................................................................
-            |
-            |
-            ✏︎    DIGITAL DESIGNER - McCorkell & Associates, Sydney
-            |    Aug, 2013 —> Dec, 2014
-            |
-            |    Responsible for the production and design of digital advertising,
-            |    including websites, mircosites, eDMs, banners and mobile applications.
-            |
-            |    ® Clients: VMware, Motorola, PayPal, AIG, LinkedIn, Navman Wireless
-            |
-            |
-            |    .......................................................................
-            |
-            |
-            ✏︎    DIGITAL ART DIRECTOR - Fluid, Milan
-            |    May, 2008 —> Jul 2013
-            |
-            |    Worked closely with the Creative Director on Advertising, Graphic
-            |    Design, Animation shorts, Packaging, Video, 3D rendering, Illustration
-            |    and UI Design.
-            |
-            |    ® Clients: Jvc, Lambretta, McCain, Famosa, Spumador, Chewits
-            |
-            |
-            ■
+            <p><span style="font-weight: 700; font-size: 17px">4rts</span>는 예술을 두고 마음이 맞는 4명이 함께 모인, 친구이자 조직입니다.</p>
+            <p class="text">‘Arts’의 모습으로 보이기도 하고, ‘예술을 위하여(for Arts)’를 뜻하는 영어 발음으로 읽히기도 하는 4rts(포아츠)라는 이름과 같이, 저희는 예술적인 것에 끊임없이 관심을 가지고 함께 하고자 합니다.
+            <p class="text">예술을 위한다는 말에는 예술적인 것을 찾기 위한다는(lookin’ for art) 의미와, 예술이 되고자 필요한 것들을 갖춰나간다는(get something for art) 두 의미가 모두 함축되어 있습니다. 멋지고 즐거움을 주는 것들부터, 의미와 가치를 담아낸 것들에 이르기까지, 당장 하고 싶은 일들과 갖추고 있는 능력을 바탕으로 새로운 것을 도전하고 찾아 나설 것입니다.</p>
+            <p>하던 일도, 가지고 있던 생각도 모두 다르지만, 그렇기에 기술, 학문, 문화, 서로가 발 딛고 있는 위치에서 바라보는 풍경들을 나눌 수 있습니다. 이를 함께 멋지게 표현하고 싶은, 때론 새로운 시선으로 함께 그림을 그리고 싶은 분들이라면, 언제나 맞이할 준비가 되어있습니다. 환영합니다.</p>
+            <div>Spread4rts.com</div>
         </div>
     </div>
 </template>
@@ -155,6 +52,14 @@ export default {
     word-wrap: break-word;
     font-size: 14px;
     letter-spacing: 2px;
-    padding: 20px;
+    padding: 45px;
+    .text {
+        text-indent: 10px;
+        margin-bottom: 0px;
+    }
+    div {
+        color: #e6362b;
+        font-size: 20px;
+    }
 }
 </style>

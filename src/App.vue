@@ -6,6 +6,9 @@
                 <navigation></navigation>
             </header>
             <content>
+                <div class="content-background">
+                    <img :src="content_background">
+                </div>
                 <div id="windows">
                     <about-us v-if="is_about_us" @closeBtn="closeBtn('aboutus')"></about-us>
                     <members v-if="is_members" @closeBtn="closeBtn('members')"></members>
@@ -14,7 +17,7 @@
                 </div>
                 <div id="files">
                     <div class="file" @click="closeBtn('aboutus')">
-                        <div class="file-icon" style="background-image: url('/static/images/question.png')"></div>
+                        <div class="file-icon" style="background-image: url('/static/images/aboutus.png')"></div>
                         <div class="file-title">ABOUT US</div>
                     </div>
                     <div class="file" @click="closeBtn('members')">
@@ -22,11 +25,11 @@
                         <div class="file-title">MEMBERS</div>
                     </div>
                     <div class="file" @click="closeBtn('projects')">
-                        <div class="file-icon"></div>
+                        <div class="file-icon" style="background-image: url('/static/images/projects.png')"></div>
                         <div class="file-title">PROJECTS</div>
                     </div>
                     <div class="file" @click="closeBtn('contact')">
-                        <div class="file-icon"></div>
+                        <div class="file-icon" style="background-image: url('/static/images/contact.png')"></div>
                         <div class="file-title">CONTACT</div>
                     </div>
                 </div>
@@ -53,13 +56,19 @@ export default {
         Contact
     },
     mounted() {
+        if((window.innerWidth || document.body.clientWidth) < 880) {
+            this.content_background = '/static/images/mobile_background.png';
+        } else {
+            this.content_background = '/static/images/web_background.png';
+        }
     },
     data() {
         return {
             is_about_us: false,
             is_members: false,
             is_contact: false,
-            is_projects: false
+            is_projects: false,
+            content_background: '/static/images/web_background.png'
         }
     },
     methods: {
@@ -100,10 +109,20 @@ header {
     justify-content: space-between;
 }
 content {
+    position: relative;
     width: 100%;
     height: calc(100vh - 31px);
     display: block;
-    background: #f81518;
+    background: #e6362b;
+
+}
+.content-background {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
 }
 #windows {
     .app-frame {
@@ -140,7 +159,7 @@ content {
                 margin: 0;
                 padding: 0;
                 .close {
-                    background: #ff5953;
+                    background: #e6362b;
                     opacity: 1;
                 }
                 .minimise {
@@ -166,7 +185,7 @@ content {
 #files {
     position: absolute;
     left: 10px;
-    top: 60px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -193,19 +212,19 @@ content {
             padding: 6px 6px 4px 6px;
             letter-spacing: 1.06px;
             line-height: 14px;
-            margin-top: 3px;
+            color: #eee;
         }
     }
 }
 @media only screen and (max-width: 880px) {
     #files {
-        top: 40px;
+        top: 10px;
         .file {
             margin: 10px;
             .file-icon {
-                width: 50px;
-                height: 50px;
-                background-size: 50px 50px;
+                width: 45px;
+                height: 45px;
+                background-size: 45px 45px;
             }
             .file-title {
                 font-size: 8px;

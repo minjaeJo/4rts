@@ -9,12 +9,9 @@
             <div class="app-title">Contact</div>
         </div>
         <div class="app-body">
-            <div class="title">Contact Us</div>
-            <b-form-input class="form-format" v-model="name" placeholder="이름"></b-form-input>
-            <b-form-input class="form-format" v-model="email" placeholder="E-Mail"></b-form-input>
-            <b-form-input class="form-format" v-model="title" placeholder="제목"></b-form-input>
-            <b-form-textarea class="form-format" v-model="context" placeholder="내용" :rows="8" :max-rows="8"></b-form-textarea>
-            <b-btn variant="gradation-gray">제출</b-btn>
+            <div class="contact-block">
+                <img src="/static/images/front_contact_us.png">
+            </div>
         </div>
     </div>
 </template>
@@ -43,8 +40,7 @@ export default {
     opacity:1;
 }
 .app-body {
-    width: 744px;
-    height: 490px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -63,4 +59,21 @@ export default {
 .form-format {
     margin: 0px 20px;
 }
+.contact-block {
+    img {
+        width: 600px;
+        height: 338px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .contact-block {
+        margin-top: 25vh;
+        img {
+            width: 100%;
+            height: auto;
+            align-items: center;
+        }
+    }
+}
+
 </style>

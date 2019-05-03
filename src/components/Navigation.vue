@@ -2,11 +2,11 @@
     <div class="navigation-container">
         <div class="menu-list">
             <div class="column-header" id="portfolio-title">
-                <span id="header-mainlogo"></span>
-                Portfolio Name
+                <img id="header-mainlogo" src="/static/images/favicon.png">
+                <span style>spread4rts</span>
             </div>
         </div>
-        <div class="menu-list utils">
+        <!-- <div class="menu-list utils">
             <div class="column-header">
                 File
             </div>
@@ -20,7 +20,7 @@
             <div class="column-header">
                 Help
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -61,7 +61,7 @@ export default {
             background-position: center;
             background-size: contain;
             background: #fff;
-            border-radius: 5px;
+            border-radius: 3px;
         }
         #portfolio-title {
             /* background: var(--gradient-Straight1);
@@ -69,6 +69,10 @@ export default {
             background-position: center; */
             padding: 7px 40px 6px 56px;
             margin-right: 20px;
+            span {
+                vertical-align: middle;
+                margin-top: -1.5px;
+            }
         }
     }
 }
